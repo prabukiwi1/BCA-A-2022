@@ -1,0 +1,48 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,j,k,h;
+    printf("Enter Array Length\n");
+    scanf("%d",&n);
+    int a[n];
+    printf("Enter the values into array\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+printf("Enter Sum values\n");
+scanf("%d",&k);
+for(i=0;i<n;i++)
+{
+    for(j=i+1;j<n;j++)
+    {
+        if(a[i]+a[j]==k)
+        {
+            printf("%d,%d\n",a[i],a[j]);
+        }
+    }
+}
+for(i=0;i<n;i++)
+{
+    for(j=i+1;j<n;j++)
+    {
+        for(h=i+2;h<n;h++)
+        {
+        if(a[i]+a[j]+a[h]==k)
+        {
+            printf("%d,%d,%d\n",a[i],a[j],a[h]);
+        }
+    }
+}
+}
+    return 0;
+}
