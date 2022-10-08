@@ -1,0 +1,54 @@
+#include<stdio.h>
+int main()
+{
+int a[100][100],b[100][100],c[100][100],row,col,i,j;
+printf("Enter the size of Row\n");
+scanf("%d",&row);
+printf("Enter the size of Coloumn\n");
+scanf("%d",&col);
+printf("Enter the values for Matrix A\n");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("Enter the values for Matrix B\n");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+scanf("%d",&b[i][j]);
+}
+}
+printf("Martix A is\n");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+}
+printf("Martix B is\n");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+printf("%d\t",b[i][j]);
+}
+printf("\n");
+}
+printf("Sum of two matrices are\n");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+c[i][j]=a[i][j]+b[i][j];
+printf("%d\t",c[i][j]);
+}
+printf("\n");
+}
+return 0;
+}
